@@ -1,0 +1,124 @@
+{
+  "_args": [
+    [
+      "react-moment-datetimepicker",
+      "/home/brian/www/CJ3"
+    ]
+  ],
+  "_from": "react-moment-datetimepicker@latest",
+  "_id": "react-moment-datetimepicker@0.2.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/react-moment-datetimepicker",
+  "_nodeVersion": "4.2.6",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/react-moment-datetimepicker-0.2.0.tgz_1469517255145_0.0385041746776551"
+  },
+  "_npmUser": {
+    "email": "void.jeron.diovis@gmail.com",
+    "name": "jeron-diovis"
+  },
+  "_npmVersion": "3.9.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "react-moment-datetimepicker",
+    "raw": "react-moment-datetimepicker",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-moment-datetimepicker/-/react-moment-datetimepicker-0.2.0.tgz",
+  "_shasum": "5ebf83154deba2ed9cca987982300673fd90a07a",
+  "_shrinkwrap": null,
+  "_spec": "react-moment-datetimepicker",
+  "_where": "/home/brian/www/CJ3",
+  "author": {
+    "name": "Wang Zuo"
+  },
+  "bugs": {
+    "url": "https://github.com/wangzuo/input-moment/issues"
+  },
+  "dependencies": {
+    "blacklist": "^1.1.2",
+    "classnames": "^2.2.0",
+    "lodash": "^4.11.1",
+    "react-input-slider": "^1.5.0"
+  },
+  "description": "React datetime picker powered by momentjs",
+  "devDependencies": {
+    "babel-cli": "^6.8.0",
+    "babel-core": "^6.1.2",
+    "babel-loader": "^6.0.1",
+    "babel-preset-es2015": "^6.1.2",
+    "babel-preset-react": "^6.1.2",
+    "css-loader": "^0.21.0",
+    "github-pages-deploy": "0.0.3",
+    "json-loader": "^0.5.4",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.3",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "dist": {
+    "shasum": "5ebf83154deba2ed9cca987982300673fd90a07a",
+    "tarball": "https://registry.npmjs.org/react-moment-datetimepicker/-/react-moment-datetimepicker-0.2.0.tgz"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "gitHead": "0536484731be6100d0520610441cda75a6c5f1f5",
+  "github-pages-deploy": {
+    "src": "example"
+  },
+  "homepage": "https://github.com/wangzuo/input-moment#readme",
+  "keywords": [
+    "react",
+    "react-component",
+    "input",
+    "datetime",
+    "picker",
+    "moment"
+  ],
+  "license": "ISC",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "email": "void.jeron.diovis@gmail.com",
+      "name": "jeron-diovis"
+    }
+  ],
+  "name": "react-moment-datetimepicker",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "moment": "^2.13",
+    "react": "^0.14.0 || ^15.1",
+    "react-dom": "^0.14.0 || ^15.1"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangzuo/input-moment.git"
+  },
+  "scripts": {
+    "build": "npm run build:transpile && npm run build-js && npm run build-css",
+    "build-css": "lessc --clean-css src/less/input-moment.less dist/input-moment.css",
+    "build-js": "webpack -p",
+    "build:transpile": "babel src -d lib",
+    "clean": "rm dist/* && rm example/bundle*",
+    "deploy": "npm run build && github-pages-deploy",
+    "start": "webpack-dev-server -c --port=8888",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.2.0"
+}

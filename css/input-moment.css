@@ -1,0 +1,219 @@
+.m-calendar {
+    display: inline-block
+}
+.m-calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed
+}
+.m-calendar td {
+    padding: 8px 0;
+    text-align: center;
+    color: #dfe0e4;
+    border: 1px solid #dfe0e4
+}
+.m-calendar .day {
+    background: #ceced0
+}
+.m-calendar .day--next-month,
+.m-calendar .day--prev-month {
+    color: #999
+}
+.m-calendar .day--active {
+    cursor: pointer;
+    background: inherit
+}
+.m-calendar .day--active:hover {
+    background: #26a69a;
+    border-color: #26a69a;
+    color: #fff
+}
+.m-calendar .day--current {
+    color: #26a69a;
+    font-weight: 700
+}
+.m-calendar thead td {
+    color: #26a69a;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px
+}
+.m-calendar tbody td {
+    color: #666
+}
+.m-calendar__toolbar {
+    line-height: 30px;
+    color: #26a69a;
+    text-align: center;
+    margin-bottom: 13px
+}
+.m-calendar__btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border: 1px solid #26a69a;
+    border-radius: 50%;
+    background: #26a69a;
+    font-size: 20px;
+    padding: 0;
+    text-align: center;
+    outline: 0;
+    z-index: 5;
+    cursor: pointer
+}
+.m-calendar__btn-prev-month {
+    float: left
+}
+.m-calendar__btn-next-month {
+    float: right
+}
+.m-calendar__btn--disabled {
+    border: 1px solid #ceced0;
+    background: #ceced0;
+    cursor: default
+}
+.m-calendar__current-date {
+    color: #26a69a
+}
+.m-time {
+    color: #fff;
+    padding-top: 50px
+}
+.m-time .showtime {
+    text-align: center
+}
+.m-time .separater {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 700;
+    color: #26a69a;
+    width: 32px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center
+}
+.m-time .time-text {
+    position: relative;
+    left: -10px;
+    font-size: 15px;
+    color: #26a69a;
+    margin-top: 7px;
+    margin-bottom: 10px
+}
+.m-time__controls {
+    padding: 0 10px
+}
+.m-time .time {
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    font-size: 38px;
+    line-height: 65px;
+    background-color: #26a69a;
+    border-radius: 3px;
+    text-align: center
+}
+.u-slider-time {
+    position: relative;
+    display: inline-block;
+    background-color: #dfe0e4;
+    border-radius: 3px;
+    height: 4px;
+    width: 100%;
+    cursor: pointer
+}
+.u-slider-time .value {
+    position: absolute;
+    background-color: #26a69a;
+    border-radius: 3px;
+    top: 0;
+    height: 100%
+}
+.u-slider-time .handle {
+    position: absolute;
+    width: 4px;
+    height: 4px
+}
+.u-slider-time .handle:after {
+    position: relative;
+    display: block;
+    content: '';
+    top: -10px;
+    left: -12px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border: 3px solid #26a69a;
+    border-radius: 50%;
+    cursor: pointer
+}
+.m-input-moment {
+    display: inline-block;
+    width: 330px;
+    padding: 12px 15px;
+    border-radius: 3px;
+    border: 1px solid #dfe0e4
+}
+.m-input-moment__btn {
+    display: inline-block;
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    line-height: 1
+}
+.m-input-moment__btn:before {
+    margin-right: 6px
+}
+.m-input-moment__options {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 4px
+}
+.m-input-moment__btn-options {
+    float: left;
+    width: 50%;
+    color: #26a69a;
+    text-align: center;
+    font-size: 16px;
+    padding: 7px;
+    border: 1px solid #26a69a;
+    border-radius: 3px
+}
+.m-input-moment__btn-options:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+.m-input-moment__btn-options:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+.m-input-moment__btn-options.is-active {
+    color: #fff;
+    background-color: #26a69a
+}
+.m-input-moment__tab {
+    display: none;
+    height: 310px
+}
+.m-input-moment__tab.is-active {
+    display: block
+}
+.m-input-moment__tabs {
+    margin-bottom: 11px
+}
+.m-input-moment__btn-save {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #26a69a;
+    padding: 12px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px
+}
